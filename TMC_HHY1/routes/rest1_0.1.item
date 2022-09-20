@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_DHJqEDiZEe2WVeO8C6lnoA" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_DHJqETiZEe2WVeO8C6lnoA"/>
+  <parameters xmi:id="_DHJqEjiZEe2WVeO8C6lnoA">
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_DHJqEziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_DHJqFDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_DHJqFTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_DHJqFjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_DHJqFziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_DHJqGDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_DHJqGTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_DHJqGjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_DHJqGziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_DHJqHDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_DHJqHTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_DHJqHjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_DHJqHziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_DHJqIDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_DHJqITiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_DHJqIjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_DHJqIziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_DHJqJDiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mgMU4DiREe2WVeO8C6lnoA" name="DataMasking" xmi:id="_DHJqJTiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mhO2sDiREe2WVeO8C6lnoA" name="DataQuality" xmi:id="_DHJqJjiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mhhxoDiREe2WVeO8C6lnoA" name="DataQualityDependencies" xmi:id="_DHJqJziZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mhnRMDiREe2WVeO8C6lnoA" name="DqStringHandling" xmi:id="_DHJqKDiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mhrioDiREe2WVeO8C6lnoA" name="DQTechnical" xmi:id="_DHJqKTiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mhwbIDiREe2WVeO8C6lnoA" name="SQLike" xmi:id="_DHJqKjiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mh16sDiREe2WVeO8C6lnoA" name="DataOperation" xmi:id="_DHJqKziZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_mh7aQDiREe2WVeO8C6lnoA" name="Mathematical" xmi:id="_DHJqLDiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miASwDiREe2WVeO8C6lnoA" name="Numeric" xmi:id="_DHJqLTiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miFLQDiREe2WVeO8C6lnoA" name="Relational" xmi:id="_DHJqLjiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miJcsDiREe2WVeO8C6lnoA" name="StringHandling" xmi:id="_DHJqLziZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miO8QDiREe2WVeO8C6lnoA" name="TalendDataGenerator" xmi:id="_DHJqMDiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miUb0DiREe2WVeO8C6lnoA" name="TalendDate" xmi:id="_DHJqMTiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_miYGMDiREe2WVeO8C6lnoA" name="TalendString" xmi:id="_DHJqMjiZEe2WVeO8C6lnoA"/>
+    <routinesParameter id="_micXoDiREe2WVeO8C6lnoA" name="TalendStringUtil" xmi:id="_DHJqMziZEe2WVeO8C6lnoA"/>
+  </parameters>
+  <node componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128" xmi:id="_DHJqNDiZEe2WVeO8C6lnoA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_DHJqNTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_DHJqNjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_hizJoDiYEe2WVeO8C6lnoA" xmi:id="_DHJqNziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="API_ID" show="false" value="" xmi:id="_DHJqODiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;/v1&quot;" xmi:id="_DHJqOTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL" xmi:id="_DHJqOjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="constant(&quot;/services/customers/&quot;)" xmi:id="_DHJqOziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CLOSED_LIST" name="HTTP_METHOD" show="false" value="GET" xmi:id="_DHJqPDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml" xmi:id="_DHJqPTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" show="false" value="application/xml" xmi:id="_DHJqPjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="RESPONSE_BEAN" show="false" value="" xmi:id="_DHJqPziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TABLE" name="SCHEMAS" xmi:id="_DHJqQDiZEe2WVeO8C6lnoA">
+      <elementValue elementRef="SCHEMA" value="Get_the_list_of_Contacts" xmi:id="_DHJqQTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqQjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/&quot;" xmi:id="_DHJqQziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqRDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqRTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqRjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_Contact" xmi:id="_DHJqRziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_DHJqSDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/&quot;" xmi:id="_DHJqSTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqSjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqSziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqTDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Load_an_individual_Contact" xmi:id="_DHJqTTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqTjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqTziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqUDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqUTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqUjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Update_a_Contact" xmi:id="_DHJqUziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_DHJqVDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqVTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqVjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqVziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqWDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Delete_a_Contact" xmi:id="_DHJqWTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_DHJqWjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqWziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqXDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqXTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqXjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Load_the_list_of_Companies" xmi:id="_DHJqXziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqYDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/&quot;" xmi:id="_DHJqYTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqYjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqYziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqZDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_Company" xmi:id="_DHJqZTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_DHJqZjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/&quot;" xmi:id="_DHJqZziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqaDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqaTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqajiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Load_an_individual_Company" xmi:id="_DHJqaziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqbDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqbTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqbjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqbziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqcDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Update_a_Company" xmi:id="_DHJqcTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_DHJqcjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqcziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqdDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqdTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqdjiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="SCHEMA" value="Delete_a_Company" xmi:id="_DHJqdziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_DHJqeDiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqeTiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqejiZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqeziZEe2WVeO8C6lnoA"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqfDiZEe2WVeO8C6lnoA"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="RESOURCE_CLASS" show="false" value="beans.ResourceClass" xmi:id="_DHJqfTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="RESOURCE_OPERATION" show="false" value="constant(&quot;operationName&quot;)" xmi:id="_DHJqfjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="SKIP_UNMARSHALLING" show="false" value="false" xmi:id="_DHJqfziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false" xmi:id="_DHJqgDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;" xmi:id="_DHJqgTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_DHJqgjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false" xmi:id="_DHJqgziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="ENABLE_SECURITY" value="false" xmi:id="_DHJqhDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_TYPE" show="false" value="BASIC" xmi:id="_DHJqhTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_DHJqhjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:y/ZypUf1zHUDF6soyX2pfNL2CmnV+ekbUHAetWTE" xmi:id="_DHJqhziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="USE_AUTHORIZATION" show="false" value="false" xmi:id="_DHJqiDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="ROLE_NAME" show="false" value="&quot;&quot;" xmi:id="_DHJqiTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="ENABLE_CORRELATION" value="false" xmi:id="_DHJqijiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;" xmi:id="_DHJqiziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false" xmi:id="_DHJqjDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_DHJqjTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TABLE" name="SL_META_DATA" show="false" xmi:id="_DHJqjjiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_DHJqjziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_DHJqkDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="MEMO" name="COMMENT" value="An API for keeping track of your contacts and the companies they work for. &#10;&#10;Don't forget to take it for a spin by clicking on the **Try in Client** button next to each operation! All read operations are public and don't require authentication.&#10;&#10;&lt;div&gt;&#10;&lt;img src='https://thecontactsapi.apispark.net/v1/img/cropped-contact-img.png' width='90%'&gt;&#10;&lt;div&gt;&#10;&#10;&lt;!-- ![](https://thecontactsapi.apispark.net/v1/img/cropped-contact-img.png) --&gt;&#10;&#10;" xmi:id="_DHJqkTiZEe2WVeO8C6lnoA"/>
+  </node>
+  <subjob xmi:id="_DHJqkjiZEe2WVeO8C6lnoA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_DHJqkziZEe2WVeO8C6lnoA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_DHJqlDiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_DHJqlTiZEe2WVeO8C6lnoA"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b105661-0945-49d8-ba86-8b6624e7b511"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J5684w+VmeCK1mqkisDcTxdaa0RHYyl8Batbt4oFsVS/+aGAsLgATli+sRtWcl2FpiVR6N2NcT5Y&#13;
+OQuI9gaMKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bfa97558-244d-4033-a0a3-89184cc2ab16"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JSvz6PhTz2pX42rhFPVeR/e5Sx3PKhh7jV8QbZ4PhS0jS69KMU5fOvw+to2eoXElj1daBc6ORO7y&#13;
+j/nbUHWAlg==</DigestValue></Reference></SignedInfo><SignatureValue>XgPae2fT6JwuetHBCnlxJ8YpOMO4YgiSkNzWGr6n9aYue5NIrx2ja4lwDLCmwQp5lrPqYx6aIwT2&#13;
+0/iAVZJMTPZhank4OssjNPIxc+nGRP8psRw14ssY5v4S4VlvII34z6AxSIXNgUVxopcLZySZm5I7&#13;
+IZ9a7cShXM4FRndCf4lY38qK2kp/Zv5wIsG4t9e7kouAmk+jhh1f5V2SjE4+5QixSDTKVPnYHazn&#13;
+9q4DMcJa1XD6hr77JWD9TwPCqAtO/pu27tLCJzRgxbyR0PpvKvazAsKlxQRPuwRk9TEq4s5NlPAC&#13;
+bdTJ5+oZ1/SzU0fpKKUZuoCAcLdSWBLs8qWjjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bfa97558-244d-4033-a0a3-89184cc2ab16" Target="#_5b105661-0945-49d8-ba86-8b6624e7b511"><Timestamp>2022-09-20 04:02:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

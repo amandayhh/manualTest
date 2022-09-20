@@ -1,0 +1,102 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "test"
+  },
+  "host" : "272vi6d.eu.api-mocks.com",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/Customers" : {
+      "post" : {
+        "summary" : "Register new Customers",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Customer"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Status 201",
+            "schema" : {
+              "type" : "object",
+              "properties" : {
+                "Request-ID" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "examples" : {
+              "application/json" : "{\n  \"Request-ID\": \"123456789\"\n}"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/Customers/_search" : {
+      "post" : {
+        "summary" : "Fuzzy Search",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Fuzzy-Threshold",
+          "in" : "header",
+          "required" : false,
+          "type" : "number",
+          "x-example" : 0.7
+        }, {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Customer"
+          },
+          "x-examples" : {
+            "application/json" : "{\n  \"name\": \"Bernhardt\",\n  \"city\": \"Bonn\",\n  \"country\": \"Germany\"\n}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Customer"
+              }
+            },
+            "examples" : {
+              "application/json" : "[\n  {\n  \"name\": \"Jan Bernhardt\",\n  \"city\": \"Bonn\",\n  \"country\": \"Germany\"\n  },\n  {\n  \"name\": \"Eva Bernhardt\",\n  \"city\": \"Bonn\",\n  \"country\": \"Germany\"\n  }\n]"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  },
+  "definitions" : {
+    "Customer" : {
+      "type" : "object",
+      "required" : [ "name" ],
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "Full name of the customer"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        }
+      },
+      "example" : "{\r\n  \"name\": \"Jan Bernhardt\",\r\n  \"city\": \"Bonn\",\r\n  \"country\": \"Germany\"\r\n}"
+    }
+  }
+}
