@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_cxhqsDpTEe2V8bkoL-Xd7g" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_cxhqsTpTEe2V8bkoL-Xd7g"/>
+  <parameters xmi:id="_cxhqsjpTEe2V8bkoL-Xd7g">
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_cxhqszpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_cxhqtDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_cxhqtTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_cxhqtjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_cxhqtzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_cxhquDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_cxhquTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_cxhqujpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_cxhquzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_cxhqvDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_cxhqvTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_cxhqvjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_cxhqvzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_cxhqwDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_cxhqwTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_cxhqwjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_cxhqwzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_cxhqxDpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vRBeIDpOEe2V8bkoL-Xd7g" name="DataMasking" xmi:id="_cxhqxTpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSMi0DpOEe2V8bkoL-Xd7g" name="DataQuality" xmi:id="_cxhqxjpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSQNMDpOEe2V8bkoL-Xd7g" name="DataQualityDependencies" xmi:id="_cxhqxzpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSTQgDpOEe2V8bkoL-Xd7g" name="DqStringHandling" xmi:id="_cxhqyDpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSWT0DpOEe2V8bkoL-Xd7g" name="DQTechnical" xmi:id="_cxhqyTpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSZXIDpOEe2V8bkoL-Xd7g" name="SQLike" xmi:id="_cxhqyjpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSdokDpOEe2V8bkoL-Xd7g" name="DataOperation" xmi:id="_cxhqyzpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vShS8DpOEe2V8bkoL-Xd7g" name="Mathematical" xmi:id="_cxhqzDpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSlkYDpOEe2V8bkoL-Xd7g" name="Numeric" xmi:id="_cxhqzTpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSpOwDpOEe2V8bkoL-Xd7g" name="Relational" xmi:id="_cxhqzjpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vStgMDpOEe2V8bkoL-Xd7g" name="StringHandling" xmi:id="_cxhqzzpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vSxxoDpOEe2V8bkoL-Xd7g" name="TalendDataGenerator" xmi:id="_cxhq0DpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vS2DEDpOEe2V8bkoL-Xd7g" name="TalendDate" xmi:id="_cxhq0TpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vS67kDpOEe2V8bkoL-Xd7g" name="TalendString" xmi:id="_cxhq0jpTEe2V8bkoL-Xd7g"/>
+    <routinesParameter id="_vS_0EDpOEe2V8bkoL-Xd7g" name="TalendStringUtil" xmi:id="_cxhq0zpTEe2V8bkoL-Xd7g"/>
+  </parameters>
+  <node componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224" xmi:id="_cxhq1DpTEe2V8bkoL-Xd7g">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_cxhq1TpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_cxhq1jpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TPc-4DpQEe2V8bkoL-Xd7g" xmi:id="_cxhq1zpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="API_ID" show="false" value="128fe141-1937-45e6-a2fe-af9c94884387" xmi:id="_cxhq2DpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;//toto.notfound.com&quot;" xmi:id="_cxhq2TpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL" xmi:id="_cxhq2jpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="constant(&quot;/services/customers/&quot;)" xmi:id="_cxhq2zpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CLOSED_LIST" name="HTTP_METHOD" show="false" value="GET" xmi:id="_cxhq3DpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml" xmi:id="_cxhq3TpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" show="false" value="application/xml" xmi:id="_cxhq3jpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="RESPONSE_BEAN" show="false" value="" xmi:id="_cxhq3zpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TABLE" name="SCHEMAS" xmi:id="_cxhq4DpTEe2V8bkoL-Xd7g">
+      <elementValue elementRef="SCHEMA" value="Get_an_access_token" xmi:id="_cxhq4TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhq4jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/token&quot;" xmi:id="_cxhq4zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhq5DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhq5TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhq5jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_an_authorization_code" xmi:id="_cxhq5zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhq6DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/authorize&quot;" xmi:id="_cxhq6TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhq6jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhq6zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhq7DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_account_ID" xmi:id="_cxhq7TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhq7jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account&quot;" xmi:id="_cxhq7zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhq8DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhq8TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhq8jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_account" xmi:id="_cxhq8zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhq9DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account&quot;" xmi:id="_cxhq9TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhq9jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhq9zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhq-DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_account_details" xmi:id="_cxhq-TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhq-jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}&quot;" xmi:id="_cxhq-zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhq_DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhq_TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhq_jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Update_account_details" xmi:id="_cxhq_zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhrADpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}&quot;" xmi:id="_cxhrATpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrAjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrAzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrBDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Check_if_an_email_address_is_already_in_use" xmi:id="_cxhrBTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrBjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/exists/{email}&quot;" xmi:id="_cxhrBzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrCDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrCTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrCjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Reset_the_account_password" xmi:id="_cxhrCzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhrDDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/password&quot;" xmi:id="_cxhrDTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrDjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrDzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrEDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrETpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhrEjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/password/forgot&quot;" xmi:id="_cxhrEzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrFDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrFTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrFjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrFzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhrGDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/password&quot;" xmi:id="_cxhrGTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrGjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrGzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrHDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrHTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrHjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/subscriptions&quot;" xmi:id="_cxhrHzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrIDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrITpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrIjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_bought_items" xmi:id="_cxhrIzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrJDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/items&quot;" xmi:id="_cxhrJTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrJjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrJzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrKDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrKTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhrKjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/mailouts&quot;" xmi:id="_cxhrKzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrLDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrLTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrLjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Unsubscribe_from_a_mailout" xmi:id="_cxhrLzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_cxhrMDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/mailouts/{prodid}&quot;" xmi:id="_cxhrMTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrMjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrMzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrNDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrNTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrNjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/subaccounts&quot;" xmi:id="_cxhrNzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrODpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrOTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrOjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_all_shop_items" xmi:id="_cxhrOzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrPDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop&quot;" xmi:id="_cxhrPTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrPjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrPzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrQDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_shop_item" xmi:id="_cxhrQTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrQjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/{itemid}&quot;" xmi:id="_cxhrQzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrRDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrRTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrRjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_file_from_an_item" xmi:id="_cxhrRzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrSDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/{itemid}/files/{filename}&quot;" xmi:id="_cxhrSTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrSjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrSzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrTDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Make_a_purchase" xmi:id="_cxhrTTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhrTjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/checkout&quot;" xmi:id="_cxhrTzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrUDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrUTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrUjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Calculate_total_values_of_items_in_cart" xmi:id="_cxhrUzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrVDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/checkout/totals&quot;" xmi:id="_cxhrVTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrVjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrVzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrWDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Preview_an_Alert" xmi:id="_cxhrWTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhrWjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/preview&quot;" xmi:id="_cxhrWzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrXDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrXTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrXjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_Alerts_for_an_account" xmi:id="_cxhrXzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrYDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_cxhrYTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrYjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrYzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrZDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhrZTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhrZjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_cxhrZzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhraDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhraTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrajpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_Alert" xmi:id="_cxhrazpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhrbDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_cxhrbTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrbjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrbzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrcDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_articles_for_an_Alert" xmi:id="_cxhrcTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrcjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_cxhrczpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrdDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrdTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrdjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Update_an_Alert" xmi:id="_cxhrdzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhreDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_cxhreTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrejpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrezpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrfDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Delete_an_Alert" xmi:id="_cxhrfTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_cxhrfjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_cxhrfzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrgDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrgTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrgjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_articles" xmi:id="_cxhrgzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrhDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles&quot;" xmi:id="_cxhrhTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrhjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrhzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhriDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_an_article" xmi:id="_cxhriTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrijpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}&quot;" xmi:id="_cxhrizpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrjDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrjTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrjjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Generate_a_PDF_of_an_article" xmi:id="_cxhrjzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrkDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}/pdf&quot;" xmi:id="_cxhrkTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrkjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrkzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrlDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_article_attachment" xmi:id="_cxhrlTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrljpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}/{filename}&quot;" xmi:id="_cxhrlzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrmDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrmTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrmjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_news_briefs" xmi:id="_cxhrmzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrnDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/news&quot;" xmi:id="_cxhrnTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrnjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrnzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhroDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_news_brief" xmi:id="_cxhroTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrojpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/news/{id}&quot;" xmi:id="_cxhrozpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrpDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrpTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrpjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_available_videos" xmi:id="_cxhrpzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrqDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/video&quot;" xmi:id="_cxhrqTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrqjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrqzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrrDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_video" xmi:id="_cxhrrTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrrjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/video/{id}&quot;" xmi:id="_cxhrrzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrsDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrsTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrsjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_reports" xmi:id="_cxhrszpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrtDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/reports&quot;" xmi:id="_cxhrtTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrtjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrtzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhruDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_free_report_info" xmi:id="_cxhruTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrujpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/report/{id}&quot;" xmi:id="_cxhruzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrvDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrvTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrvjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_free_report" xmi:id="_cxhrvzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrwDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/reports/{id}/download&quot;" xmi:id="_cxhrwTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhrwjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrwzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhrxDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_upcoming_events" xmi:id="_cxhrxTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhrxjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/events/upcoming&quot;" xmi:id="_cxhrxzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhryDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhryTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhryjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Send_an_event_sponsorship_enquiry" xmi:id="_cxhryzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhrzDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/events/sponsorship&quot;" xmi:id="_cxhrzTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhrzjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhrzzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr0DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_publications" xmi:id="_cxhr0TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr0jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications&quot;" xmi:id="_cxhr0zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr1DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr1TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr1jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_publications_delivered_by_email" xmi:id="_cxhr1zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr2DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/mailouts&quot;" xmi:id="_cxhr2TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr2jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr2zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr3DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="List_issues_for_a_current_publication" xmi:id="_cxhr3TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr3jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}&quot;" xmi:id="_cxhr3zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr4DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr4TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr4jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_info_for_an_issue" xmi:id="_cxhr4zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr5DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}/{issueid}&quot;" xmi:id="_cxhr5TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr5jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr5zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr6DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_issue" xmi:id="_cxhr6TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr6jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}/{issueid}/download&quot;" xmi:id="_cxhr6zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr7DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr7TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr7jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_issues_for_an_archived_publication" xmi:id="_cxhr7zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr8DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/archived/{shortname}&quot;" xmi:id="_cxhr8TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr8jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr8zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr9DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_issue_from_an_archived_publication" xmi:id="_cxhr9TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr9jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/archived/{shortname}/{filename}&quot;" xmi:id="_cxhr9zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr-DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr-TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhr-jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_profile_ID" xmi:id="_cxhr-zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhr_DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles&quot;" xmi:id="_cxhr_TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhr_jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhr_zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsADpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhsATpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsAjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles/id&quot;" xmi:id="_cxhsAzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsBDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsBTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsBjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_basic_info_for_a_profile" xmi:id="_cxhsBzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsCDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles/{type}/{id}&quot;" xmi:id="_cxhsCTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsCjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsCzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsDDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_companies_with_traffic_data" xmi:id="_cxhsDTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsDjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/companies&quot;" xmi:id="_cxhsDzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsEDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsETpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsEjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_fields" xmi:id="_cxhsEzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsFDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}/fields&quot;" xmi:id="_cxhsFTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsFjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsFzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsGDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_data" xmi:id="_cxhsGTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsGjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}&quot;" xmi:id="_cxhsGzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsHDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsHTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsHjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_data_for_a_field" xmi:id="_cxhsHzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsIDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}/{field}&quot;" xmi:id="_cxhsITpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsIjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsIzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsJDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_fields" xmi:id="_cxhsJTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsJjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium/fields&quot;" xmi:id="_cxhsJzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsKDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsKTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsKjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_data" xmi:id="_cxhsKzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsLDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium&quot;" xmi:id="_cxhsLTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsLjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsLzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsMDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_data_for_a_field" xmi:id="_cxhsMTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsMjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium/{field}&quot;" xmi:id="_cxhsMzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsNDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsNTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsNjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_investors_for_all_airports" xmi:id="_cxhsNzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsODpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/investors/airports&quot;" xmi:id="_cxhsOTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsOjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsOzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsPDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_investment_details_for_an_airport" xmi:id="_cxhsPTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsPjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/investors/{type}/{id}&quot;" xmi:id="_cxhsPzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsQDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsQTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsQjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_summary_of_airport_construction_spend" xmi:id="_cxhsQzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsRDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction&quot;" xmi:id="_cxhsRTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsRjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsRzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsSDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_new_airports_under_construction" xmi:id="_cxhsSTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsSjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/airports&quot;" xmi:id="_cxhsSzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsTDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsTTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsTjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_construction_projects_for_existing_airports" xmi:id="_cxhsTzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsUDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/projects&quot;" xmi:id="_cxhsUTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsUjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsUzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsVDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhsVTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsVjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/projects/{id}/description&quot;" xmi:id="_cxhsVzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsWDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsWTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsWjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhsWzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsXDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/cask&quot;" xmi:id="_cxhsXTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsXjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsXzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsYDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_CASK_data_for_a_year" xmi:id="_cxhsYTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsYjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/cask/{year}&quot;" xmi:id="_cxhsYzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsZDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsZTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsZjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_companies_with_share_prices" xmi:id="_cxhsZzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsaDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/shares&quot;" xmi:id="_cxhsaTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsajpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsazpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsbDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_capacity_for_a_route" xmi:id="_cxhsbTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsbjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity&quot;" xmi:id="_cxhsbzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhscDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhscTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhscjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_possible_origins_for_capacity_data" xmi:id="_cxhsczpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsdDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/origins&quot;" xmi:id="_cxhsdTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsdjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsdzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhseDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhseTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsejpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/destinations&quot;" xmi:id="_cxhsezpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsfDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsfTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsfjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_airports_that_have_current_capacity_data" xmi:id="_cxhsfzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsgDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/airports&quot;" xmi:id="_cxhsgTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsgjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsgzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhshDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_airlines_that_have_current_capacity_data" xmi:id="_cxhshTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhshjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/airlines&quot;" xmi:id="_cxhshzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsiDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsiTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsijpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_fleet_summary" xmi:id="_cxhsizpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsjDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/current&quot;" xmi:id="_cxhsjTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsjjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsjzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhskDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_average_fleet_age_by_metaregion" xmi:id="_cxhskTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhskjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/age&quot;" xmi:id="_cxhskzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhslDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhslTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsljpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_leased_aircraft_totals" xmi:id="_cxhslzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsmDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/lessors&quot;" xmi:id="_cxhsmTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsmjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsmzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsnDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_aircraft_on_order" xmi:id="_cxhsnTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsnjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/orders&quot;" xmi:id="_cxhsnzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsoDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsoTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsojpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_aircraft_deliveries" xmi:id="_cxhsozpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhspDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/deliveries&quot;" xmi:id="_cxhspTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhspjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhspzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsqDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_saved_searches" xmi:id="_cxhsqTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsqjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search&quot;" xmi:id="_cxhsqzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsrDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsrTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsrjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_saved_search" xmi:id="_cxhsrzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhssDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search&quot;" xmi:id="_cxhssTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhssjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsszpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhstDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_saved_search" xmi:id="_cxhstTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhstjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_cxhstzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsuDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsuTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsujpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Update_a_saved_search" xmi:id="_cxhsuzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_cxhsvDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_cxhsvTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhsvjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsvzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhswDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Delete_a_saved_search" xmi:id="_cxhswTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_cxhswjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_cxhswzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhsxDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsxTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhsxjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_filter" xmi:id="_cxhsxzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhsyDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/filters/{type}&quot;" xmi:id="_cxhsyTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhsyjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhsyzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhszDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_filter_by_ID" xmi:id="_cxhszTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhszjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/filters/{type}/{id}&quot;" xmi:id="_cxhszzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs0DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs0TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs0jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_fleet_data" xmi:id="_cxhs0zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs1DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet&quot;" xmi:id="_cxhs1TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs1jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs1zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs2DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_available_categories" xmi:id="_cxhs2TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs2jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/categories&quot;" xmi:id="_cxhs2zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs3DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs3TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs3jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_category_information" xmi:id="_cxhs3zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs4DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/categories/{id}&quot;" xmi:id="_cxhs4TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs4jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs4zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs5DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_available_industry_sectors" xmi:id="_cxhs5TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs5jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/sectors&quot;" xmi:id="_cxhs5zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs6DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs6TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs6jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_countries" xmi:id="_cxhs6zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs7DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/countries&quot;" xmi:id="_cxhs7TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs7jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs7zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs8DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_current_homepage_content" xmi:id="_cxhs8TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs8jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site&quot;" xmi:id="_cxhs8zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs9DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs9TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs9jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_ads_to_display" xmi:id="_cxhs9zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs-DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/ads&quot;" xmi:id="_cxhs-TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhs-jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhs-zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhs_DpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_map_token" xmi:id="_cxhs_TpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhs_jpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/maptoken&quot;" xmi:id="_cxhs_zpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtADpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtATpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtAjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Check_a_map_token" xmi:id="_cxhtAzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_cxhtBDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/maptoken&quot;" xmi:id="_cxhtBTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_cxhtBjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtBzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtCDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_XML_sitemap_index" xmi:id="_cxhtCTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtCjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map&quot;" xmi:id="_cxhtCzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtDDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtDTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtDjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_XML_sitemap" xmi:id="_cxhtDzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtEDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map/download/{filename}&quot;" xmi:id="_cxhtETpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtEjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtEzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtFDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_Google_News_XML_sitemap" xmi:id="_cxhtFTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtFjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map/{type}&quot;" xmi:id="_cxhtFzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtGDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtGTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtGjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_tag" xmi:id="_cxhtGzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtHDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/tags&quot;" xmi:id="_cxhtHTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtHjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtHzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtIDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Search_the_CAPA_site" xmi:id="_cxhtITpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtIjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/search&quot;" xmi:id="_cxhtIzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtJDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtJTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtJjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_cities" xmi:id="_cxhtJzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtKDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/cities&quot;" xmi:id="_cxhtKTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtKjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtKzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtLDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airports" xmi:id="_cxhtLTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtLjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/airports&quot;" xmi:id="_cxhtLzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtMDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtMTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtMjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airlines" xmi:id="_cxhtMzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtNDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/airlines&quot;" xmi:id="_cxhtNTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtNjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtNzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtODpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airline_alliances" xmi:id="_cxhtOTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtOjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/alliances&quot;" xmi:id="_cxhtOzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtPDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtPTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtPjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_investors" xmi:id="_cxhtPzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtQDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/investors&quot;" xmi:id="_cxhtQTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtQjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtQzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtRDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_fleet_statuses" xmi:id="_cxhtRTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtRjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/statuses&quot;" xmi:id="_cxhtRzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtSDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtSTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtSjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_aircraft_roles" xmi:id="_cxhtSzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtTDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/roles&quot;" xmi:id="_cxhtTTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtTjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtTzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtUDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_cxhtUTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtUjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/allseats&quot;" xmi:id="_cxhtUzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtVDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtVTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtVjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_regions" xmi:id="_cxhtVzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_cxhtWDpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/regions&quot;" xmi:id="_cxhtWTpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_cxhtWjpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_cxhtWzpTEe2V8bkoL-Xd7g"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_cxhtXDpTEe2V8bkoL-Xd7g"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="RESOURCE_CLASS" show="false" value="beans.ResourceClass" xmi:id="_cxhtXTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="RESOURCE_OPERATION" show="false" value="constant(&quot;operationName&quot;)" xmi:id="_cxhtXjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="SKIP_UNMARSHALLING" show="false" value="false" xmi:id="_cxhtXzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false" xmi:id="_cxhtYDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;" xmi:id="_cxhtYTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_cxhtYjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false" xmi:id="_cxhtYzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="ENABLE_SECURITY" value="false" xmi:id="_cxhtZDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_TYPE" show="false" value="BASIC" xmi:id="_cxhtZTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_cxhtZjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:GC2jK35syfsFBhak14ufK8xxh2b4mxHpD5SzuyrW" xmi:id="_cxhtZzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="USE_AUTHORIZATION" show="false" value="false" xmi:id="_cxhtaDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="ROLE_NAME" show="false" value="&quot;&quot;" xmi:id="_cxhtaTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="ENABLE_CORRELATION" value="false" xmi:id="_cxhtajpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;" xmi:id="_cxhtazpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false" xmi:id="_cxhtbDpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_cxhtbTpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TABLE" name="SL_META_DATA" show="false" xmi:id="_cxhtbjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_cxhtbzpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_cxhtcDpTEe2V8bkoL-Xd7g"/>
+  </node>
+  <subjob xmi:id="_cxhtcTpTEe2V8bkoL-Xd7g">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_cxhtcjpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_cxhtczpTEe2V8bkoL-Xd7g"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_cxhtdDpTEe2V8bkoL-Xd7g"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d72edebd-865e-41b8-a883-738ff67d6c0c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P7MfrVq+blx4uByzORB1wlkqwT2PUDbpyyNal4vH+WbVNaBIGc1ceYSmlLeJo1Eq2vFgV0QFeL8l&#13;
+EIPhN+uy5Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_babc2b6b-f82c-4c9a-af33-29628d44d340"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jfw50oLM3f6LvEgCnwN+OuVuulehaApPNgypR2CNRhfLD5mUrnDpMifmUk+ToTR9cvWesSka1+G5&#13;
+aJ2Stmvm/Q==</DigestValue></Reference></SignedInfo><SignatureValue>oVOJKNvgHoGt6H0h76X1Juv3AEorjYZh3xU2gpBa+/vm3Ers7UlZ84U0FSLBAG8kS3HBiWZRfinT&#13;
+ZeoQ1/pg7JUBc2efahBiqO9QYQzFG7rOYg6oGR0xp11+yHUfDswEloiGvCH5kQbBmdP6OTscGwae&#13;
+O1DRfmq1zUkd08tbZUnXoE0Dwg2C9QEG7iv9irfJbHh8Sy5Vq/Pf92homhCOxLPH9djJLKmUSnXZ&#13;
+j9TlkRmddqarO2PJEEBwVxpsn+lj5XD/besqZYxDv/9f3Wa7cw0jI3JlvevK6BmNAdPvRiatVHKW&#13;
+VUKA90qcqBaPkb9E/U90rcv8WIWYqTEVIZ9SRQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_babc2b6b-f82c-4c9a-af33-29628d44d340" Target="#_d72edebd-865e-41b8-a883-738ff67d6c0c"><Timestamp>2022-09-22 08:49:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
