@@ -1,148 +1,723 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_DHJqEDiZEe2WVeO8C6lnoA" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default" xmi:id="_DHJqETiZEe2WVeO8C6lnoA"/>
-  <parameters xmi:id="_DHJqEjiZEe2WVeO8C6lnoA">
-    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_DHJqEziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_DHJqFDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_DHJqFTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_DHJqFjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_DHJqFziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_DHJqGDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_DHJqGTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_DHJqGjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_DHJqGziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_DHJqHDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_DHJqHTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_DHJqHjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_DHJqHziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_DHJqIDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_DHJqITiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_DHJqIjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_DHJqIziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_DHJqJDiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mgMU4DiREe2WVeO8C6lnoA" name="DataMasking" xmi:id="_DHJqJTiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mhO2sDiREe2WVeO8C6lnoA" name="DataQuality" xmi:id="_DHJqJjiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mhhxoDiREe2WVeO8C6lnoA" name="DataQualityDependencies" xmi:id="_DHJqJziZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mhnRMDiREe2WVeO8C6lnoA" name="DqStringHandling" xmi:id="_DHJqKDiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mhrioDiREe2WVeO8C6lnoA" name="DQTechnical" xmi:id="_DHJqKTiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mhwbIDiREe2WVeO8C6lnoA" name="SQLike" xmi:id="_DHJqKjiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mh16sDiREe2WVeO8C6lnoA" name="DataOperation" xmi:id="_DHJqKziZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_mh7aQDiREe2WVeO8C6lnoA" name="Mathematical" xmi:id="_DHJqLDiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miASwDiREe2WVeO8C6lnoA" name="Numeric" xmi:id="_DHJqLTiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miFLQDiREe2WVeO8C6lnoA" name="Relational" xmi:id="_DHJqLjiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miJcsDiREe2WVeO8C6lnoA" name="StringHandling" xmi:id="_DHJqLziZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miO8QDiREe2WVeO8C6lnoA" name="TalendDataGenerator" xmi:id="_DHJqMDiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miUb0DiREe2WVeO8C6lnoA" name="TalendDate" xmi:id="_DHJqMTiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_miYGMDiREe2WVeO8C6lnoA" name="TalendString" xmi:id="_DHJqMjiZEe2WVeO8C6lnoA"/>
-    <routinesParameter id="_micXoDiREe2WVeO8C6lnoA" name="TalendStringUtil" xmi:id="_DHJqMziZEe2WVeO8C6lnoA"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_sS-GgDorEe2MP6f0qHPtEQ" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_sS-GgTorEe2MP6f0qHPtEQ"/>
+  <parameters xmi:id="_sS-GgjorEe2MP6f0qHPtEQ">
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_sS-GgzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_sS-GhDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_sS-GhTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_sS-GhjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_sS-GhzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_sS-GiDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_sS-GiTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_sS-GijorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_sS-GizorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_sS-GjDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_sS-GjTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_sS-GjjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_sS-GjzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_sS-GkDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_sS-GkTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_sS-GkjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_sS-GkzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_sS-GlDorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mgMU4DiREe2WVeO8C6lnoA" name="DataMasking" xmi:id="_sS-GlTorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mhO2sDiREe2WVeO8C6lnoA" name="DataQuality" xmi:id="_sS-GljorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mhhxoDiREe2WVeO8C6lnoA" name="DataQualityDependencies" xmi:id="_sS-GlzorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mhnRMDiREe2WVeO8C6lnoA" name="DqStringHandling" xmi:id="_sS-GmDorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mhrioDiREe2WVeO8C6lnoA" name="DQTechnical" xmi:id="_sS-GmTorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mhwbIDiREe2WVeO8C6lnoA" name="SQLike" xmi:id="_sS-GmjorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mh16sDiREe2WVeO8C6lnoA" name="DataOperation" xmi:id="_sS-GmzorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_mh7aQDiREe2WVeO8C6lnoA" name="Mathematical" xmi:id="_sS-GnDorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miASwDiREe2WVeO8C6lnoA" name="Numeric" xmi:id="_sS-GnTorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miFLQDiREe2WVeO8C6lnoA" name="Relational" xmi:id="_sS-GnjorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miJcsDiREe2WVeO8C6lnoA" name="StringHandling" xmi:id="_sS-GnzorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miO8QDiREe2WVeO8C6lnoA" name="TalendDataGenerator" xmi:id="_sS-GoDorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miUb0DiREe2WVeO8C6lnoA" name="TalendDate" xmi:id="_sS-GoTorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_miYGMDiREe2WVeO8C6lnoA" name="TalendString" xmi:id="_sS-GojorEe2MP6f0qHPtEQ"/>
+    <routinesParameter id="_micXoDiREe2WVeO8C6lnoA" name="TalendStringUtil" xmi:id="_sS-GozorEe2MP6f0qHPtEQ"/>
   </parameters>
-  <node componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128" xmi:id="_DHJqNDiZEe2WVeO8C6lnoA">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_DHJqNTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_DHJqNjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_hizJoDiYEe2WVeO8C6lnoA" xmi:id="_DHJqNziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="API_ID" show="false" value="" xmi:id="_DHJqODiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;/v1&quot;" xmi:id="_DHJqOTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL" xmi:id="_DHJqOjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="PATH" show="false" value="constant(&quot;/services/customers/&quot;)" xmi:id="_DHJqOziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CLOSED_LIST" name="HTTP_METHOD" show="false" value="GET" xmi:id="_DHJqPDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml" xmi:id="_DHJqPTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" show="false" value="application/xml" xmi:id="_DHJqPjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="RESPONSE_BEAN" show="false" value="" xmi:id="_DHJqPziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TABLE" name="SCHEMAS" xmi:id="_DHJqQDiZEe2WVeO8C6lnoA">
-      <elementValue elementRef="SCHEMA" value="Get_the_list_of_Contacts" xmi:id="_DHJqQTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqQjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/&quot;" xmi:id="_DHJqQziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqRDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqRTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqRjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Create_a_Contact" xmi:id="_DHJqRziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_DHJqSDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/&quot;" xmi:id="_DHJqSTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqSjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqSziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqTDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Load_an_individual_Contact" xmi:id="_DHJqTTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqTjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqTziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqUDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqUTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqUjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Update_a_Contact" xmi:id="_DHJqUziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_DHJqVDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqVTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqVjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqVziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqWDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Delete_a_Contact" xmi:id="_DHJqWTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_DHJqWjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/contacts/{contactid}&quot;" xmi:id="_DHJqWziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqXDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqXTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqXjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Load_the_list_of_Companies" xmi:id="_DHJqXziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqYDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/&quot;" xmi:id="_DHJqYTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqYjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqYziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqZDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Create_a_new_Company" xmi:id="_DHJqZTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_DHJqZjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/&quot;" xmi:id="_DHJqZziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqaDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqaTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqajiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Load_an_individual_Company" xmi:id="_DHJqaziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_DHJqbDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqbTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="" xmi:id="_DHJqbjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqbziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqcDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Update_a_Company" xmi:id="_DHJqcTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_DHJqcjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqcziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqdDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqdTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqdjiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="SCHEMA" value="Delete_a_Company" xmi:id="_DHJqdziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_DHJqeDiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/companies/{companyid}&quot;" xmi:id="_DHJqeTiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_DHJqejiZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_DHJqeziZEe2WVeO8C6lnoA"/>
-      <elementValue elementRef="BEAN" value="" xmi:id="_DHJqfDiZEe2WVeO8C6lnoA"/>
+  <node componentName="cREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128" xmi:id="_sS-GpDorEe2MP6f0qHPtEQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_sS-GpTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" xmi:id="_sS-GpjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FiBpkDokEe2MP6f0qHPtEQ" xmi:id="_sS-GpzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="API_ID" show="false" value="6b11e0a5-93f0-4196-9442-725bd661c075" xmi:id="_sS-GqDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;//toto.notfound.com&quot;" xmi:id="_sS-GqTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_TYPE" value="MANUAL" xmi:id="_sS-GqjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="constant(&quot;/services/customers/&quot;)" xmi:id="_sS-GqzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CLOSED_LIST" name="HTTP_METHOD" show="false" value="GET" xmi:id="_sS-GrDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml" xmi:id="_sS-GrTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" show="false" value="application/xml" xmi:id="_sS-GrjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="RESPONSE_BEAN" show="false" value="" xmi:id="_sS-GrzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TABLE" name="SCHEMAS" xmi:id="_sS-GsDorEe2MP6f0qHPtEQ">
+      <elementValue elementRef="SCHEMA" value="Get_an_access_token" xmi:id="_sS-GsTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-GsjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/token&quot;" xmi:id="_sS-GszorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-GtDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-GtTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-GtjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_an_authorization_code" xmi:id="_sS-GtzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-GuDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/authorize&quot;" xmi:id="_sS-GuTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-GujorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-GuzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-GvDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_account_ID" xmi:id="_sS-GvTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-GvjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account&quot;" xmi:id="_sS-GvzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-GwDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-GwTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-GwjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_account" xmi:id="_sS-GwzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-GxDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account&quot;" xmi:id="_sS-GxTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-GxjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-GxzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-GyDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_account_details" xmi:id="_sS-GyTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-GyjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}&quot;" xmi:id="_sS-GyzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-GzDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-GzTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-GzjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Update_account_details" xmi:id="_sS-GzzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-G0DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}&quot;" xmi:id="_sS-G0TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-G0jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G0zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G1DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Check_if_an_email_address_is_already_in_use" xmi:id="_sS-G1TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-G1jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/exists/{email}&quot;" xmi:id="_sS-G1zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-G2DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G2TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G2jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Reset_the_account_password" xmi:id="_sS-G2zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-G3DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/password&quot;" xmi:id="_sS-G3TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-G3jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G3zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G4DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-G4TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-G4jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/password/forgot&quot;" xmi:id="_sS-G4zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-G5DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G5TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G5jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-G5zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-G6DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/password&quot;" xmi:id="_sS-G6TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-G6jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G6zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G7DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-G7TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-G7jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/subscriptions&quot;" xmi:id="_sS-G7zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-G8DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G8TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G8jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_bought_items" xmi:id="_sS-G8zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-G9DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/items&quot;" xmi:id="_sS-G9TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-G9jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G9zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G-DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-G-TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-G-jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/mailouts&quot;" xmi:id="_sS-G-zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-G_DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-G_TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-G_jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Unsubscribe_from_a_mailout" xmi:id="_sS-G_zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_sS-HADorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/mailouts/{prodid}&quot;" xmi:id="_sS-HATorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HAjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HAzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HBDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-HBTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HBjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/account/{id}/subaccounts&quot;" xmi:id="_sS-HBzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HCDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HCTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HCjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_all_shop_items" xmi:id="_sS-HCzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HDDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop&quot;" xmi:id="_sS-HDTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HDjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HDzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HEDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_shop_item" xmi:id="_sS-HETorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HEjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/{itemid}&quot;" xmi:id="_sS-HEzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HFDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HFTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HFjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_file_from_an_item" xmi:id="_sS-HFzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HGDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/{itemid}/files/{filename}&quot;" xmi:id="_sS-HGTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HGjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HGzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HHDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Make_a_purchase" xmi:id="_sS-HHTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-HHjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/checkout&quot;" xmi:id="_sS-HHzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HIDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HITorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HIjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Calculate_total_values_of_items_in_cart" xmi:id="_sS-HIzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HJDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/shop/checkout/totals&quot;" xmi:id="_sS-HJTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HJjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HJzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HKDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Preview_an_Alert" xmi:id="_sS-HKTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-HKjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/preview&quot;" xmi:id="_sS-HKzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HLDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HLTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HLjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_Alerts_for_an_account" xmi:id="_sS-HLzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HMDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_sS-HMTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HMjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HMzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HNDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-HNTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-HNjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_sS-HNzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HODorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HOTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HOjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_Alert" xmi:id="_sS-HOzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-HPDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}&quot;" xmi:id="_sS-HPTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HPjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HPzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HQDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_articles_for_an_Alert" xmi:id="_sS-HQTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HQjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_sS-HQzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HRDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HRTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HRjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Update_an_Alert" xmi:id="_sS-HRzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-HSDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_sS-HSTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HSjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HSzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HTDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Delete_an_Alert" xmi:id="_sS-HTTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_sS-HTjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/alerts/{id}/{alertid}&quot;" xmi:id="_sS-HTzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HUDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HUTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HUjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_articles" xmi:id="_sS-HUzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HVDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles&quot;" xmi:id="_sS-HVTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HVjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HVzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HWDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_an_article" xmi:id="_sS-HWTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HWjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}&quot;" xmi:id="_sS-HWzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HXDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HXTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HXjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Generate_a_PDF_of_an_article" xmi:id="_sS-HXzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HYDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}/pdf&quot;" xmi:id="_sS-HYTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HYjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HYzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HZDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_article_attachment" xmi:id="_sS-HZTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HZjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/articles/{id}/{filename}&quot;" xmi:id="_sS-HZzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HaDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HaTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HajorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_news_briefs" xmi:id="_sS-HazorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HbDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/news&quot;" xmi:id="_sS-HbTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HbjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HbzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HcDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_news_brief" xmi:id="_sS-HcTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HcjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/news/{id}&quot;" xmi:id="_sS-HczorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HdDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HdTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HdjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_available_videos" xmi:id="_sS-HdzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HeDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/video&quot;" xmi:id="_sS-HeTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HejorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HezorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HfDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_video" xmi:id="_sS-HfTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HfjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/video/{id}&quot;" xmi:id="_sS-HfzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HgDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HgTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HgjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_reports" xmi:id="_sS-HgzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HhDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/reports&quot;" xmi:id="_sS-HhTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HhjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HhzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HiDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_free_report_info" xmi:id="_sS-HiTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HijorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/report/{id}&quot;" xmi:id="_sS-HizorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HjDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HjTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HjjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_free_report" xmi:id="_sS-HjzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HkDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/reports/{id}/download&quot;" xmi:id="_sS-HkTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HkjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HkzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HlDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_upcoming_events" xmi:id="_sS-HlTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HljorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/events/upcoming&quot;" xmi:id="_sS-HlzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HmDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HmTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HmjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Send_an_event_sponsorship_enquiry" xmi:id="_sS-HmzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-HnDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/events/sponsorship&quot;" xmi:id="_sS-HnTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-HnjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HnzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HoDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_publications" xmi:id="_sS-HoTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HojorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications&quot;" xmi:id="_sS-HozorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HpDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HpTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HpjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_publications_delivered_by_email" xmi:id="_sS-HpzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HqDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/mailouts&quot;" xmi:id="_sS-HqTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HqjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HqzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HrDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="List_issues_for_a_current_publication" xmi:id="_sS-HrTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HrjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}&quot;" xmi:id="_sS-HrzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HsDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HsTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HsjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_info_for_an_issue" xmi:id="_sS-HszorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HtDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}/{issueid}&quot;" xmi:id="_sS-HtTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HtjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HtzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HuDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_issue" xmi:id="_sS-HuTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HujorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/{id}/{issueid}/download&quot;" xmi:id="_sS-HuzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HvDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HvTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HvjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_issues_for_an_archived_publication" xmi:id="_sS-HvzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HwDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/archived/{shortname}&quot;" xmi:id="_sS-HwTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HwjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HwzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HxDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_issue_from_an_archived_publication" xmi:id="_sS-HxTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HxjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/publications/archived/{shortname}/{filename}&quot;" xmi:id="_sS-HxzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HyDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HyTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-HyjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_profile_ID" xmi:id="_sS-HyzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-HzDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles&quot;" xmi:id="_sS-HzTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-HzjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-HzzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H0DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-H0TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H0jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles/id&quot;" xmi:id="_sS-H0zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H1DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H1TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H1jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_basic_info_for_a_profile" xmi:id="_sS-H1zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H2DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/profiles/{type}/{id}&quot;" xmi:id="_sS-H2TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H2jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H2zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H3DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_companies_with_traffic_data" xmi:id="_sS-H3TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H3jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/companies&quot;" xmi:id="_sS-H3zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H4DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H4TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H4jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_fields" xmi:id="_sS-H4zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H5DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}/fields&quot;" xmi:id="_sS-H5TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H5jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H5zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H6DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_data" xmi:id="_sS-H6TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H6jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}&quot;" xmi:id="_sS-H6zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H7DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H7TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H7jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_traffic_data_for_a_field" xmi:id="_sS-H7zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H8DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/{type}/{id}/{rangeType}/{field}&quot;" xmi:id="_sS-H8TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H8jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H8zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H9DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_fields" xmi:id="_sS-H9TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H9jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium/fields&quot;" xmi:id="_sS-H9zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H-DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H-TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-H-jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_data" xmi:id="_sS-H-zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-H_DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium&quot;" xmi:id="_sS-H_TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-H_jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-H_zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IADorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_IATA_premium_traffic_data_for_a_field" xmi:id="_sS-IATorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IAjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/traffic/premium/{field}&quot;" xmi:id="_sS-IAzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IBDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IBTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IBjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_investors_for_all_airports" xmi:id="_sS-IBzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-ICDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/investors/airports&quot;" xmi:id="_sS-ICTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-ICjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-ICzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IDDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_investment_details_for_an_airport" xmi:id="_sS-IDTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IDjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/investors/{type}/{id}&quot;" xmi:id="_sS-IDzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IEDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IETorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IEjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_summary_of_airport_construction_spend" xmi:id="_sS-IEzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IFDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction&quot;" xmi:id="_sS-IFTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IFjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IFzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IGDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_new_airports_under_construction" xmi:id="_sS-IGTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IGjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/airports&quot;" xmi:id="_sS-IGzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IHDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IHTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IHjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_construction_projects_for_existing_airports" xmi:id="_sS-IHzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IIDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/projects&quot;" xmi:id="_sS-IITorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IIjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IIzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IJDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-IJTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IJjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/construction/projects/{id}/description&quot;" xmi:id="_sS-IJzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IKDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IKTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IKjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-IKzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-ILDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/cask&quot;" xmi:id="_sS-ILTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-ILjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-ILzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IMDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_CASK_data_for_a_year" xmi:id="_sS-IMTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IMjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/cask/{year}&quot;" xmi:id="_sS-IMzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-INDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-INTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-INjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_companies_with_share_prices" xmi:id="_sS-INzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IODorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/shares&quot;" xmi:id="_sS-IOTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IOjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IOzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IPDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_capacity_for_a_route" xmi:id="_sS-IPTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IPjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity&quot;" xmi:id="_sS-IPzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IQDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IQTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IQjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_possible_origins_for_capacity_data" xmi:id="_sS-IQzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IRDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/origins&quot;" xmi:id="_sS-IRTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IRjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IRzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-ISDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-ISTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-ISjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/destinations&quot;" xmi:id="_sS-ISzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-ITDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-ITTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-ITjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_airports_that_have_current_capacity_data" xmi:id="_sS-ITzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IUDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/airports&quot;" xmi:id="_sS-IUTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IUjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IUzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IVDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_airlines_that_have_current_capacity_data" xmi:id="_sS-IVTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IVjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/capacity/airlines&quot;" xmi:id="_sS-IVzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IWDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IWTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IWjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_fleet_summary" xmi:id="_sS-IWzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IXDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/current&quot;" xmi:id="_sS-IXTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IXjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IXzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IYDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_average_fleet_age_by_metaregion" xmi:id="_sS-IYTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IYjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/age&quot;" xmi:id="_sS-IYzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IZDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IZTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IZjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_leased_aircraft_totals" xmi:id="_sS-IZzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IaDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/lessors&quot;" xmi:id="_sS-IaTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IajorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IazorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IbDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_aircraft_on_order" xmi:id="_sS-IbTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IbjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/orders&quot;" xmi:id="_sS-IbzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IcDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IcTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IcjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_global_summary_of_aircraft_deliveries" xmi:id="_sS-IczorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IdDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/summaries/deliveries&quot;" xmi:id="_sS-IdTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IdjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IdzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IeDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_saved_searches" xmi:id="_sS-IeTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IejorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search&quot;" xmi:id="_sS-IezorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IfDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IfTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IfjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Create_a_new_saved_search" xmi:id="_sS-IfzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-IgDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search&quot;" xmi:id="_sS-IgTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-IgjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IgzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IhDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_saved_search" xmi:id="_sS-IhTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IhjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_sS-IhzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IiDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IiTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IijorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Update_a_saved_search" xmi:id="_sS-IizorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" xmi:id="_sS-IjDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_sS-IjTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-IjjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IjzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IkDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Delete_a_saved_search" xmi:id="_sS-IkTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" xmi:id="_sS-IkjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/search/{id}&quot;" xmi:id="_sS-IkzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-IlDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IlTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IljorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_filter" xmi:id="_sS-IlzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-ImDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/filters/{type}&quot;" xmi:id="_sS-ImTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-ImjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-ImzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-InDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_filter_by_ID" xmi:id="_sS-InTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-InjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet/filters/{type}/{id}&quot;" xmi:id="_sS-InzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IoDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IoTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IojorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_fleet_data" xmi:id="_sS-IozorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IpDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/fleet&quot;" xmi:id="_sS-IpTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IpjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IpzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IqDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_available_categories" xmi:id="_sS-IqTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IqjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/categories&quot;" xmi:id="_sS-IqzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IrDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IrTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IrjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_category_information" xmi:id="_sS-IrzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IsDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/categories/{id}&quot;" xmi:id="_sS-IsTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IsjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IszorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-ItDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_available_industry_sectors" xmi:id="_sS-ItTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-ItjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/sectors&quot;" xmi:id="_sS-ItzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IuDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IuTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IujorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_countries" xmi:id="_sS-IuzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IvDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/countries&quot;" xmi:id="_sS-IvTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IvjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IvzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IwDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_current_homepage_content" xmi:id="_sS-IwTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IwjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site&quot;" xmi:id="_sS-IwzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IxDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IxTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IxjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_ads_to_display" xmi:id="_sS-IxzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IyDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/ads&quot;" xmi:id="_sS-IyTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-IyjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-IyzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-IzDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_map_token" xmi:id="_sS-IzTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-IzjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/maptoken&quot;" xmi:id="_sS-IzzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I0DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I0TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I0jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Check_a_map_token" xmi:id="_sS-I0zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" xmi:id="_sS-I1DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/maptoken&quot;" xmi:id="_sS-I1TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="JSON" xmi:id="_sS-I1jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I1zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I2DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_XML_sitemap_index" xmi:id="_sS-I2TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I2jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map&quot;" xmi:id="_sS-I2zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I3DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I3TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I3jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_an_XML_sitemap" xmi:id="_sS-I3zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I4DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map/download/{filename}&quot;" xmi:id="_sS-I4TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I4jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I4zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I5DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Download_a_Google_News_XML_sitemap" xmi:id="_sS-I5TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I5jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/map/{type}&quot;" xmi:id="_sS-I5zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I6DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I6TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I6jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_for_a_tag" xmi:id="_sS-I6zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I7DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/tags&quot;" xmi:id="_sS-I7TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I7jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I7zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I8DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Search_the_CAPA_site" xmi:id="_sS-I8TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I8jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/search&quot;" xmi:id="_sS-I8zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I9DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I9TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I9jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_cities" xmi:id="_sS-I9zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I-DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/cities&quot;" xmi:id="_sS-I-TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-I-jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-I-zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-I_DorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airports" xmi:id="_sS-I_TorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-I_jorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/airports&quot;" xmi:id="_sS-I_zorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JADorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JATorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JAjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airlines" xmi:id="_sS-JAzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JBDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/airlines&quot;" xmi:id="_sS-JBTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JBjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JBzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JCDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_airline_alliances" xmi:id="_sS-JCTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JCjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/alliances&quot;" xmi:id="_sS-JCzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JDDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JDTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JDjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_investors" xmi:id="_sS-JDzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JEDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/investors&quot;" xmi:id="_sS-JETorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JEjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JEzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JFDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_fleet_statuses" xmi:id="_sS-JFTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JFjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/statuses&quot;" xmi:id="_sS-JFzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JGDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JGTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JGjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_aircraft_roles" xmi:id="_sS-JGzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JHDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/site/roles&quot;" xmi:id="_sS-JHTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JHjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JHzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JIDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="" xmi:id="_sS-JITorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JIjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/allseats&quot;" xmi:id="_sS-JIzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JJDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JJTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JJjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="SCHEMA" value="Get_a_list_of_all_regions" xmi:id="_sS-JJzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" xmi:id="_sS-JKDorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/data/regions&quot;" xmi:id="_sS-JKTorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="CONSUMES" value="" xmi:id="_sS-JKjorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="PRODUCES" value="JSON" xmi:id="_sS-JKzorEe2MP6f0qHPtEQ"/>
+      <elementValue elementRef="BEAN" value="" xmi:id="_sS-JLDorEe2MP6f0qHPtEQ"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="RESOURCE_CLASS" show="false" value="beans.ResourceClass" xmi:id="_DHJqfTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="RESOURCE_OPERATION" show="false" value="constant(&quot;operationName&quot;)" xmi:id="_DHJqfjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="SKIP_UNMARSHALLING" show="false" value="false" xmi:id="_DHJqfziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false" xmi:id="_DHJqgDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;" xmi:id="_DHJqgTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_DHJqgjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false" xmi:id="_DHJqgziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="ENABLE_SECURITY" value="false" xmi:id="_DHJqhDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CLOSED_LIST" name="SECURITY_TYPE" show="false" value="BASIC" xmi:id="_DHJqhTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_DHJqhjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:y/ZypUf1zHUDF6soyX2pfNL2CmnV+ekbUHAetWTE" xmi:id="_DHJqhziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="USE_AUTHORIZATION" show="false" value="false" xmi:id="_DHJqiDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="ROLE_NAME" show="false" value="&quot;&quot;" xmi:id="_DHJqiTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="ENABLE_CORRELATION" value="false" xmi:id="_DHJqijiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;" xmi:id="_DHJqiziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false" xmi:id="_DHJqjDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_DHJqjTiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TABLE" name="SL_META_DATA" show="false" xmi:id="_DHJqjjiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_DHJqjziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_DHJqkDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="MEMO" name="COMMENT" value="An API for keeping track of your contacts and the companies they work for. &#10;&#10;Don't forget to take it for a spin by clicking on the **Try in Client** button next to each operation! All read operations are public and don't require authentication.&#10;&#10;&lt;div&gt;&#10;&lt;img src='https://thecontactsapi.apispark.net/v1/img/cropped-contact-img.png' width='90%'&gt;&#10;&lt;div&gt;&#10;&#10;&lt;!-- ![](https://thecontactsapi.apispark.net/v1/img/cropped-contact-img.png) --&gt;&#10;&#10;" xmi:id="_DHJqkTiZEe2WVeO8C6lnoA"/>
+    <elementParameter field="TEXT" name="RESOURCE_CLASS" show="false" value="beans.ResourceClass" xmi:id="_sS-JLTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="RESOURCE_OPERATION" show="false" value="constant(&quot;operationName&quot;)" xmi:id="_sS-JLjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="SKIP_UNMARSHALLING" show="false" value="false" xmi:id="_sS-JLzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false" xmi:id="_sS-JMDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;" xmi:id="_sS-JMTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_sS-JMjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false" xmi:id="_sS-JMzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="ENABLE_SECURITY" value="false" xmi:id="_sS-JNDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_TYPE" show="false" value="BASIC" xmi:id="_sS-JNTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_sS-JNjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:yzvdbgC9Jtef9LemrPT6n3mIxMgY5nCXqpFeSm+r" xmi:id="_sS-JNzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="USE_AUTHORIZATION" show="false" value="false" xmi:id="_sS-JODorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="ROLE_NAME" show="false" value="&quot;&quot;" xmi:id="_sS-JOTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="ENABLE_CORRELATION" value="false" xmi:id="_sS-JOjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;" xmi:id="_sS-JOzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false" xmi:id="_sS-JPDorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_sS-JPTorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TABLE" name="SL_META_DATA" show="false" xmi:id="_sS-JPjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_sS-JPzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_sS-JQDorEe2MP6f0qHPtEQ"/>
   </node>
-  <subjob xmi:id="_DHJqkjiZEe2WVeO8C6lnoA">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_DHJqkziZEe2WVeO8C6lnoA"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_DHJqlDiZEe2WVeO8C6lnoA"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_DHJqlTiZEe2WVeO8C6lnoA"/>
+  <subjob xmi:id="_sS-JQTorEe2MP6f0qHPtEQ">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cREST_1" xmi:id="_sS-JQjorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_sS-JQzorEe2MP6f0qHPtEQ"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_sS-JRDorEe2MP6f0qHPtEQ"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b105661-0945-49d8-ba86-8b6624e7b511"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J5684w+VmeCK1mqkisDcTxdaa0RHYyl8Batbt4oFsVS/+aGAsLgATli+sRtWcl2FpiVR6N2NcT5Y&#13;
-OQuI9gaMKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bfa97558-244d-4033-a0a3-89184cc2ab16"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JSvz6PhTz2pX42rhFPVeR/e5Sx3PKhh7jV8QbZ4PhS0jS69KMU5fOvw+to2eoXElj1daBc6ORO7y&#13;
-j/nbUHWAlg==</DigestValue></Reference></SignedInfo><SignatureValue>XgPae2fT6JwuetHBCnlxJ8YpOMO4YgiSkNzWGr6n9aYue5NIrx2ja4lwDLCmwQp5lrPqYx6aIwT2&#13;
-0/iAVZJMTPZhank4OssjNPIxc+nGRP8psRw14ssY5v4S4VlvII34z6AxSIXNgUVxopcLZySZm5I7&#13;
-IZ9a7cShXM4FRndCf4lY38qK2kp/Zv5wIsG4t9e7kouAmk+jhh1f5V2SjE4+5QixSDTKVPnYHazn&#13;
-9q4DMcJa1XD6hr77JWD9TwPCqAtO/pu27tLCJzRgxbyR0PpvKvazAsKlxQRPuwRk9TEq4s5NlPAC&#13;
-bdTJ5+oZ1/SzU0fpKKUZuoCAcLdSWBLs8qWjjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_719639ec-5297-45cb-bdd1-f7fb95d73dd9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J0GpkvMbJfjK1smMhkkNx0Cya1uqCCCZL212rotTwpqoROaa8CSTDih7PO4Eq5Zm4DnQmf20QXf+&#13;
++XB9fQXDwg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6f9e4436-df13-4690-9cd3-cc038aa25485"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iHSnWeduVFeoQwtVm1xVeEUbI+zWPyFnyocASSGDKLI1TNMgNOwKIJY1dLTvezR1JZXHTVTwJqZ/&#13;
+jRqNO349Iw==</DigestValue></Reference></SignedInfo><SignatureValue>ARD68NpTbOrp75lSim+PM7KMDsSWluUUtr/nzHGo4xbKpd3kln8N375SpRrXRJNOFeMKKX/8hSeW&#13;
+rfENMVOFFo2jYpGgYN+MerW3uZ7ePyC/++VwwHJwAkAqyP/CJGXDKXU/a/T7OA7Ehu0lupuWsgl5&#13;
+nrgVvTj2kkr1ZMpfyAf0cNe7awnHJeY2QPiSSvsD/VFI5Yww75LFM+prFa1DL/4e+85xz9sWBbJB&#13;
+zEvpVtoQshh+vQwlpCLKAZcOq/jBPH26lr/K0/MV0xXmPpSzmnOgNfyXIY9gkLsoI6Jlz8ga64CJ&#13;
+cWdPfFw3O4w6ZrPRMSa+izULxg8EYtrPffYHaw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -164,4 +739,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bfa97558-244d-4033-a0a3-89184cc2ab16" Target="#_5b105661-0945-49d8-ba86-8b6624e7b511"><Timestamp>2022-09-20 04:02:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6f9e4436-df13-4690-9cd3-cc038aa25485" Target="#_719639ec-5297-45cb-bdd1-f7fb95d73dd9"><Timestamp>2022-09-22 04:04:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
