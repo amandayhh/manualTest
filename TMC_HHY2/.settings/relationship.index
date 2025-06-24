@@ -50,10 +50,6 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_AYuQUBBPEeGFz_xdEv1J-Q",
-    "version" : "0.1",
-    "type" : "services"
-  }, {
     "id" : "_QDAIMA-cEeGrZ8n2806j_A",
     "version" : "0.1",
     "type" : "services"
@@ -139,13 +135,28 @@
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_KQzQQBBxEeGJovAMsLgpoQ",
-    "version" : "0.1",
-    "type" : "services"
-  }, {
     "id" : "_e4XwABBXEeGFz_xdEv1J-Q",
     "version" : "0.1",
     "type" : "services"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_NbZn4KEiEe2CL4BlhJiIbA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r7v70LdyEey-RPaFxMo8jg",
+    "version" : "Latest",
+    "type" : "beansJar"
+  }, {
+    "id" : "_FdNL0KEuEe2CL4BlhJiIbA",
+    "version" : "0.1",
+    "type" : "mapper"
+  }, {
+    "id" : "_hx0Q8KEuEe2CL4BlhJiIbA",
+    "version" : "0.1",
+    "type" : "mapper"
   } ]
 }, {
   "baseItem" : {
@@ -187,10 +198,6 @@
     "id" : "_QDAIMA-cEeGrZ8n2806j_A",
     "version" : "0.1",
     "type" : "services"
-  }, {
-    "id" : "_Y0H_kA-cEeGrZ8n2806j_A",
-    "version" : "0.1",
-    "type" : "services"
   } ]
 }, {
   "baseItem" : {
@@ -226,10 +233,6 @@
     "type" : "property"
   }, {
     "id" : "_efM-MCASEeGcz7LQVWZhpA",
-    "version" : "0.1",
-    "type" : "services"
-  }, {
-    "id" : "_gcGvwCASEeGcz7LQVWZhpA",
     "version" : "0.1",
     "type" : "services"
   } ]
@@ -269,10 +272,6 @@
     "id" : "_e4XwABBXEeGFz_xdEv1J-Q",
     "version" : "0.1",
     "type" : "services"
-  }, {
-    "id" : "_iIfc8BBXEeGFz_xdEv1J-Q",
-    "version" : "0.1",
-    "type" : "services"
   } ]
 }, {
   "baseItem" : {
@@ -286,10 +285,6 @@
     "type" : "property"
   }, {
     "id" : "_QDAIMA-cEeGrZ8n2806j_A",
-    "version" : "0.1",
-    "type" : "services"
-  }, {
-    "id" : "_iK1OABBREeGFz_xdEv1J-Q",
     "version" : "0.1",
     "type" : "services"
   } ]
@@ -327,10 +322,6 @@
     "type" : "property"
   }, {
     "id" : "_e4XwABBXEeGFz_xdEv1J-Q",
-    "version" : "0.1",
-    "type" : "services"
-  }, {
-    "id" : "_koaSoBBwEeGJovAMsLgpoQ",
     "version" : "0.1",
     "type" : "services"
   } ]

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/Avro/AvroSample.xml' outStruct='Structures/Avro/AvroSample.xml' inputRep='179' outputRep='177' nextMap='' inputStructUserName='AvroSample' outputStructUserName='AvroSample' V1='4' name='Sample_AVRO_to_JSON' incarnation='120'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='talend' V281='13' V1='4' name='AvroSample' description='Sample schema to help you get started.'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='my_field1' description='The int type is a 32-bit signed integer.'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='my_field2' description='The double type is a double precision (64-bit) IEEE 754 floating-point number.'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='my_field3' description='The string is a unicode character sequence.'>
+      <mapNode t='190' idref='1'/>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='6' V200='8' structElemExists='true' usedCount='18' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='talend' V281='13' modifiedFromParent_loop='true' V1='4' name='AvroSample' description='Sample schema to help you get started.'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/AvroSample,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='7' V200='8' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='my_field1' description='The int type is a 32-bit signed integer.'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/AvroSample/my_field1</value>
+    </child>
+    <child t='200' id='8' V200='8' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='my_field2' description='The double type is a double precision (64-bit) IEEE 754 floating-point number.'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/AvroSample/my_field2</value>
+    </child>
+    <child t='200' id='9' V200='8' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='my_field3' description='The string is a unicode character sequence.'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/AvroSample/my_field3</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='699' id='10' V699='1' avroNamespace='talend' V690='1' rowElemPath='/AvroSample'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='16' V697='1' V690='1' padOutput='true' encoding='UTF-8'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='11' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' idref='11'/>
+  <child t='165' id='12' V1='4' name='Document Bindings'>
+    <child t='166' id='13' V166='5' docType='1' V1='4' name='in$/AvroSample'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='14' V166='5' docType='2' V1='4' name='out$/AvroSample'>
+      <elemNode t='200' idref='6'/>
+    </child>
+  </child>
+  <child t='201' id='15' V1='4' name='Inherits From'>
+  </child>
+</root>
