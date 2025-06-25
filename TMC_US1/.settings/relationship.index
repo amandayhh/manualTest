@@ -8,6 +8,10 @@
     "id" : "_G8mdoFGKEfC6I5aIPydDOw",
     "version" : "Latest",
     "type" : "joblet"
+  }, {
+    "id" : "_GhXSIFGVEfC6I5aIPydDOw",
+    "version" : "Latest",
+    "type" : "joblet"
   } ]
 }, {
   "baseItem" : {
