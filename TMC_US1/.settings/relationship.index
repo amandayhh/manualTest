@@ -1,0 +1,27 @@
+[ {
+  "baseItem" : {
+    "id" : "_RLyOcFGKEfC6I5aIPydDOw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_G8mdoFGKEfC6I5aIPydDOw",
+    "version" : "Latest",
+    "type" : "joblet"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_gcGvwCASEeGcz7LQVWZhpA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_efM-MCASEeGcz7LQVWZhpA - _elcwICASEeGcz7LQVWZhpA - _eldXMCASEeGcz7LQVWZhpA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_efM-MCASEeGcz7LQVWZhpA",
+    "version" : "0.1",
+    "type" : "services"
+  } ]
+} ]
