@@ -24,4 +24,15 @@
     "version" : "0.1",
     "type" : "services"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_tQFwQFGWEfC6I5aIPydDOw",
+    "version" : "0.1",
+    "type" : "test_case"
+  },
+  "relatedItems" : [ {
+    "id" : "_RLyOcFGKEfC6I5aIPydDOw",
+    "version" : "0.1",
+    "type" : "test_case"
+  } ]
 } ]
