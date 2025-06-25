@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_OA4lcFGaEfCjDdhDZGzhcA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_OA4lcVGaEfCjDdhDZGzhcA" confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters xmi:id="_OA4lclGaEfCjDdhDZGzhcA">
+    <elementParameter xmi:id="_OA4lc1GaEfCjDdhDZGzhcA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_OA4ldFGaEfCjDdhDZGzhcA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_OA4ldVGaEfCjDdhDZGzhcA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_OA4ldlGaEfCjDdhDZGzhcA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_OA4ld1GaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_OA4leFGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_OA4leVGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lelGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_OA4le1GaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lfFGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lfVGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lflGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lf1GaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lgFGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lgVGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lglGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lg1GaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_OA4lhFGaEfCjDdhDZGzhcA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_OA4lhVGaEfCjDdhDZGzhcA" componentName="routelet1" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
+    <elementParameter xmi:id="_OA4lhlGaEfCjDdhDZGzhcA" field="TEXT" name="UNIQUE_NAME" value="routelet1_1"/>
+    <elementParameter xmi:id="_OA4lh1GaEfCjDdhDZGzhcA" field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter xmi:id="_OA4liFGaEfCjDdhDZGzhcA" field="PROCESS_TYPE" name="PROCESS_TYPE" value="TMC_US1:routelet1"/>
+    <elementParameter xmi:id="_OA4liVGaEfCjDdhDZGzhcA" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter xmi:id="_OA4lilGaEfCjDdhDZGzhcA" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_PROCESS" value="_G8mdoFGKEfC6I5aIPydDOw" show="false"/>
+    <elementParameter xmi:id="_OA4li1GaEfCjDdhDZGzhcA" field="TECHNICAL" name="PROCESS_TYPE:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_OA4ljFGaEfCjDdhDZGzhcA" field="RADIO" name="SELECTED_CONTEXT" value="true"/>
+    <elementParameter xmi:id="_OA4ljVGaEfCjDdhDZGzhcA" field="RADIO" name="ROUTE_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_OA4ljlGaEfCjDdhDZGzhcA" field="RADIO" name="ROUTELET_CONTEXT" value="false"/>
+    <elementParameter xmi:id="_OA4lj1GaEfCjDdhDZGzhcA" field="TABLE" name="CONTEXT_PARAM"/>
+    <elementParameter xmi:id="_OA4lkFGaEfCjDdhDZGzhcA" field="TEXT" name="LABEL" value="routelet1"/>
+    <elementParameter xmi:id="_OA4lkVGaEfCjDdhDZGzhcA" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_OA4lklGaEfCjDdhDZGzhcA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_OA4lk1GaEfCjDdhDZGzhcA" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_OA4llFGaEfCjDdhDZGzhcA" field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <subjob xmi:id="_OA4llVGaEfCjDdhDZGzhcA">
+    <elementParameter xmi:id="_OA4lllGaEfCjDdhDZGzhcA" field="TEXT" name="UNIQUE_NAME" value="routelet1_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>
